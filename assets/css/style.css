@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "bastian";
+    src: url(../fonts/Bastian.ttf);
+}
+
+body {
+    background-color: rgb(208, 255, 208);
+}
+
+.container {
+    padding-top: 300px;
+}
+
+h2 {
+    font-family: "bastian";
+}
+
+h3 {
+    font-family: "bastian";
+    font-size: 100px;
+}
+
+.signupheader {
+    font-family: "bastian";
+    font-size: 80px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#signupmargin {
+    font-size: 150px;
+    margin-top: 150px;
+}
+
+
+.three {
+    padding-top: 210px;
+    padding-left: 100px;
+}
+
+.four {
+    padding-left: 90px;
+}
+
+.buttons {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, 50%);
+}
+
+#reg-now {
+    background-color: rgb(233, 176, 255);
+    border-radius: 20px;
+    width: 200px;
+}
+
+#reg-later {
+    background-color: rgb(233, 176, 255);
+    border-radius: 20px;
+    width: 200px;
+}
+
+@media only screen and (max-width: 2800px) {
+}
+
+.screen {
+    display: none;
+}
+
+.one {
+    display: block;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+.stepCounter {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signup {
+    height: 100vh;
+    border: solid black 1px;
+
+}
