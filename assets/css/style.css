@@ -46,9 +46,11 @@ h3 {
 
 .buttons {
     position: absolute;
+    display: block;
+    width: 300px;
     left: 50%;
     top: 55%;
-    transform: translate(-50%, 50%);
+    transform: translate(-31%, 50%);
 }
 
 #reg-now {
@@ -61,6 +63,7 @@ h3 {
     background-color: rgb(233, 176, 255);
     border-radius: 20px;
     width: 200px;
+    opacity: .5;
 }
 
 @media only screen and (max-width: 2800px) {
@@ -74,30 +77,12 @@ h3 {
     display: block;
 }
 
-.step {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbbbbb;
-    border: none;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.5;
-}
-
-.step.active {
-    opacity: 1;
-}
-
-.stepCounter {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .signup {
     height: 100vh;
     border: solid black 1px;
-
 }
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
