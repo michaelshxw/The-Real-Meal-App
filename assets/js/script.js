@@ -52,16 +52,21 @@ function cancelBtnSubmitOne(){
     console.log('cancel');
     screenTwo.style.display = "none"
     screenOne.style.display = "block"
+    localStorage.clear()
 }
 
 function cancelBtnSubmitTwo(){
     console.log('cancel');
     screenThree.style.display = "none"
     screenOne.style.display = "block"
+    localStorage.clear()
 }
 
 function cancelBtnSubmitThree(){
     console.log('cancel');
     screenFour.style.display = "none"
     screenOne.style.display = "block"
+    localStorage.clear()
 }
+
+console.log(localStorage);

@@ -40,7 +40,7 @@ h3 {
 }
 
 .four {
-    padding-left: 90px;
+    padding-left: 100px;
 }
 
 .buttons {
@@ -64,35 +64,14 @@ h3 {
     opacity: .5;
 }
 
-@media only screen and (max-width: 2800px) {
-}
-
+/* hide all screens to begin */
 .screen {
     display: none;
 }
 
+/* display first screen on load */
 .one {
     display: block;
 }
 
-.two {
-    display: ;
-}
-
-.three {
-    display: ;
-}
-
-.four {
-    display: ;
-}
-
-.signup {
-    height: 100vh;
-    border: solid black 1px;
-}
-
-input.invalid {
-    background-color: #ff0000;
-}
 
