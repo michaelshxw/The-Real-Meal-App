@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    padding-top: 300px;
+    padding-top: 150px;
 }
 
 h2 {
@@ -17,12 +17,12 @@ h2 {
 
 h3 {
     font-family: "bastian";
-    font-size: 100px;
+    font-size: 20vw;
 }
 
 .signupheader {
     font-family: "bastian";
-    font-size: 80px;
+    font-size: 5vw;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -30,13 +30,12 @@ h3 {
 }
 
 #signupmargin {
-    font-size: 150px;
-    margin-top: 150px;
+    font-size: 10vw;
+    margin-top: 100px;
 }
 
 
 .three {
-    padding-top: 210px;
     padding-left: 100px;
 }
 
@@ -46,11 +45,10 @@ h3 {
 
 .buttons {
     position: absolute;
-    display: block;
-    width: 300px;
+    display: inline-block;
     left: 50%;
     top: 55%;
-    transform: translate(-31%, 50%);
+    transform: translate(-50%, 50%);
 }
 
 #reg-now {
@@ -77,12 +75,24 @@ h3 {
     display: block;
 }
 
+.two {
+    display: ;
+}
+
+.three {
+    display: ;
+}
+
+.four {
+    display: ;
+}
+
 .signup {
     height: 100vh;
     border: solid black 1px;
 }
 
 input.invalid {
-    background-color: #ffdddd;
+    background-color: #ff0000;
 }
 

@@ -1,33 +1,32 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <title>The Real Meal App: Sign Up</title>
 </head>
+
 <body>
-    <!-- two buttons: register and guest login -->
+    <!-- Screen 1 - register now and later -->
     <section class="signup">
         <div class="screen one">
             <h1 class="signupheader">Welcome to</h1>
             <h2 class="signupheader" id="signupmargin">The Real Meal</h2>
-            
 
-            <div class="buttons">
-                <div class="screen1 button is-large" id="reg-now">
-                    <p>Regiser Now</p>
-                </div>
-                <div class="screen1 button is-large" id="reg-later">
-                    <p>Register Later</p>
+            <div>
+                <div class="buttons" style="float:right;">
+                    <button class="button is-large" type="button" id="reg-now">Register Now</button>
+                    <button class="button is-large" type="button" id="reg-later">Register Later</button>
                 </div>
             </div>
         </div>
 
         <!-- form container -->
 
-        <!-- personal details -->
+        <!-- Screen 2 - personal details -->
         <div class="screen two container" style="width: 600px;">
             <h3 class="subtitle is-1">Let us get to know you!</h3>
             <div class="field">
@@ -39,26 +38,26 @@
             <div class="field">
                 <label class="label">Age</label>
                 <div class="control">
-                <div class="select">
-                    <select>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>22</option>
-                    <option>23</option>
-                    <option>24</option>
-                    <option>25</option>
-                    <option>26</option>
-                    <option>27</option>
-                    <option>28</option>
-                    <option>29</option>
-                    <option>30</option>
-                    <option>31</option>
-                    <option>32</option>
-                    <option>33</option>
-                    </select>
-                </div>
+                    <div class="select">
+                        <select>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                            <option>32</option>
+                            <option>33</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="field">
@@ -78,21 +77,26 @@
                 <div class="control">
                     <div class="select">
                         <select>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                        <option>Prefer not to say</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                            <option>Prefer not to say</option>
                         </select>
-                    </div>   
-                </div>  
+                    </div>
+                </div>
             </div>
-            <div class="button is-small">
-                <p>Next</p>
+            <br><br>
+            <div class="">
+                <div class="button is-small" id="cancelone">
+                    <p>Cancel</p>
+                </div>
+                <div class="button is-small" id="nextBtnOne">
+                    <p>Next1</p>
+                </div>
             </div>
-            
         </div>
 
-        <!-- Screen 3 -->
+        <!-- Screen 3 - more info -->
         <div class="screen three container" style="width: 600px;">
             <h3 class="subtitle is-1">Tell us some more! If you'd like...</h3>
             <div class="select is-multiple">
@@ -109,9 +113,9 @@
             <div class="select is-multiple">
                 <label class="label">What's your goal?</label>
                 <select multiple size="3" style="width: 400px">
-                <option value="Lose Weight">Lose Weight</option>
-                <option value="Maintain Weight">Maintain Weight</option>
-                <option value="Increase Weight">Increase Weight</option>
+                    <option value="Lose Weight">Lose Weight</option>
+                    <option value="Maintain Weight">Maintain Weight</option>
+                    <option value="Increase Weight">Increase Weight</option>
                 </select>
             </div>
             <br>
@@ -119,24 +123,30 @@
             <div class="select is-multiple">
                 <label class="label">Do you have any dietary preferences?</label>
                 <select multiple size="6" style="width: 400px">
-                <option value="none">None</option>
-                <option value="choose-later">Choose Later</option>
-                <option value="gluten-free">Gluten Free</option>
-                <option value="vegetarian">Vegetarian</option>
-                <option value="vegan">Vegan</option>
-                <option value="lacto-vegetarian">Lacto-Vegetarian</option>
-                <option value="ovo-vegetarian">Ovo-Vegetarian</option>
-                <option value="pescetarian">Pescetarian</option>
-                <option value="paleo">Paleo</option>
-                <option value="primal">Primal</option>
+                    <option value="none">None</option>
+                    <option value="choose-later">Choose Later</option>
+                    <option value="gluten-free">Gluten Free</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="lacto-vegetarian">Lacto-Vegetarian</option>
+                    <option value="ovo-vegetarian">Ovo-Vegetarian</option>
+                    <option value="pescetarian">Pescetarian</option>
+                    <option value="paleo">Paleo</option>
+                    <option value="primal">Primal</option>
                 </select>
             </div>
             <br><br>
-            <div class="button is-medium">
-                <p>Next</p>
+            <div>
+                <div class="button is-small" id="canceltwo">
+                    <p>Cancel</p>
+                </div>
+                <div class="button is-small" id="nextBtnTwo">
+                    <p>Next</p>
+                </div>
             </div>
         </div>
-        <!-- screen 4 - allergens -->
+
+        <!-- Screen 4 - allergens -->
         <div class="screen four container" style="width: 600px;">
             <h3 class="subtitle is-1">And most importantly...</h3>
             <div class="select is-multiple">
@@ -152,23 +162,19 @@
                 </select>
             </div>
             <br><br>
-            <div class="button is-medium">
-                <p>Next</p>
+            <div class="">
+                <div class="button is-small" id="cancelthree">
+                    <p>Cancel</p>
+                </div>
+                <div class="button is-small" id="nextBtnThree">
+                    <p>Next</p>
+                </div>
             </div>
         </div>
-
-        <div class="stepCounter">
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-          </div>
-        
-
-        
     </section>
 
     <!-- script links -->
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
