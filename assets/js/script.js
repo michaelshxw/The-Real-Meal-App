@@ -86,17 +86,4 @@ function cancelBtnSubmitThree(){
     screenFour.style.display = "none"
     screenOne.style.display = "block"
     localStorage.clear();
-}
-
-// //form page 1 save data
-
-var userOptions = {
-    name: localStorage.getItem('nameValue'),
-    age: localStorage.getItem('ageValue'),
-    height: localStorage.getItem('heightValue'),
-    weight: localStorage.getItem('weightValue'),
-    gender: localStorage.getItem('genderValue'),
-    activity: localStorage.getItem('activityValue'),
-    goal: localStorage.getItem('goalValue'),
-    diet: localStorage.getItem('dietaryValue')
-}
+};

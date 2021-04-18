@@ -5,7 +5,9 @@
 
 /* background color for entire app */
 body {
-    background-color: rgb(208, 255, 208);
+    background-color: white;
+    /* background-color: #68a12f; */
+    /* background-color: rgb(208, 255, 208); */
 }
 
 /* padding for container to center it horizontally */
@@ -20,7 +22,7 @@ h2 {
 
 h3 {
     font-family: "bastian";
-    font-size: 20vw;
+    font-size: 70px !important;
 }
 
 .signupheader {
@@ -40,6 +42,7 @@ h3 {
 /* padding for each form page to center and align properly */
 .three {
     padding-left: 100px;
+    margin-top: -80px !important;
 }
 
 .four {
@@ -48,24 +51,19 @@ h3 {
 
 /* button styling */
 .buttons {
+    align-items: center;
     position: absolute;
-    display: inline-block;
     left: 50%;
     top: 55%;
     transform: translate(-50%, 50%);
 }
 
-#reg-now {
-    background-color: rgb(233, 176, 255);
-    border-radius: 20px;
-    width: 200px;
+.cmp-buttons {
+    margin-top: -350px;
 }
 
-#reg-later {
-    background-color: rgb(233, 176, 255);
-    border-radius: 20px;
-    width: 200px;
-    opacity: .5;
+.button {
+    width: 150px;
 }
 
 /* hide all screens to begin */
@@ -77,8 +75,6 @@ h3 {
 .one {
     display: block;
 }
-
-
 
 
 /* create meal plan styling */
@@ -130,13 +126,43 @@ h3 {
 }
 
 h1 {
+    margin-top: -50px !important;
     font-family: 'bastian';
     text-align: center;
 }
 
-.open-modal {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 5%;
+.button {
+    border: 3px solid #88CA5E !important;
+    border-radius: 100px !important;
+    transition: all 0.5s ease 0s;
+}
+
+#reg-now {
+    width: 200px;
+    height: 65px;
+}
+#reg-later {
+    width: 200px;
+    height: 65px;
+}
+
+.button:hover {
+    color: black;
+    background: #D2FBA4;
+    border-color:  #88CA5E !important;
+    transition: all 0.5s ease 0s;
+}
+
+.create-meal-plan {
+    display: none !important;
+}
+
+#editBtn {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.saveModal {
+    background-color: #88CA5E !important;
 }
