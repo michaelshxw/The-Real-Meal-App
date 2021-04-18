@@ -77,3 +77,56 @@ h3 {
 .one {
     display: block;
 }
+
+/* create meal plan styling */
+
+.column {
+    border: solid black 3px;
+}
+
+.columns {
+    padding:100px;
+    height: 1000px;
+}
+
+#recipe-image {
+    padding: 100px;
+    border: solid green 5px;
+}
+
+#recipe-image::after {
+    content: "recipe image";
+}
+
+#recipe-title {
+    padding: 20px;
+    border: solid red 5px;
+}
+
+#recipe-title::after {
+    content: "recipe title";
+}
+
+#recipe-steps {
+    padding: 330px 100px;
+    border: solid pink 5px;
+}
+
+#recipe-steps::after {
+    content: "recipe steps, 1. 2. 3. ";
+}
+
+#recipe-ingredients {
+    padding: 240px 100px;
+    border: solid greenyellow 5px;
+}
+
+#recipe-ingredients::after {
+    content: "recipe ingredients";
+}
+
+h1 {
+    font-family: 'bastian';
+    text-align: center;
+    margin-top: 100px;
+}
