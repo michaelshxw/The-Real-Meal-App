@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "bastian";
+    src: url(../fonts/Bastian.ttf);
+}
+
+/* background color for entire app */
+body {
+    background-color: rgb(208, 255, 208);
+}
+
+/* padding for container to center it horizontally */
+.container {
+    padding-top: 150px;
+}
+
+/* header styling */
+h2 {
+    font-family: "bastian";
+}
+
+h3 {
+    font-family: "bastian";
+    font-size: 20vw;
+}
+
+.signupheader {
+    font-family: "bastian";
+    font-size: 5vw;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#signupmargin {
+    font-size: 10vw;
+    margin-top: 100px;
+}
+
+/* padding for each form page to center and align properly */
+.three {
+    padding-left: 100px;
+}
+
+.four {
+    padding-left: 100px;
+}
+
+/* button styling */
+.buttons {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, 50%);
+}
+
+#reg-now {
+    background-color: rgb(233, 176, 255);
+    border-radius: 20px;
+    width: 200px;
+}
+
+#reg-later {
+    background-color: rgb(233, 176, 255);
+    border-radius: 20px;
+    width: 200px;
+    opacity: .5;
+}
+
+/* hide all screens to begin */
+.screen {
+    display: none;
+}
+
+/* display first screen on load */
+.one {
+    display: block;
+}
