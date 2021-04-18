@@ -78,6 +78,9 @@ h3 {
     display: block;
 }
 
+
+
+
 /* create meal plan styling */
 
 .column {
@@ -129,4 +132,11 @@ h1 {
     font-family: 'bastian';
     text-align: center;
     margin-top: 100px;
+}
+
+.open-modal {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 5%;
 }

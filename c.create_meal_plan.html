@@ -11,7 +11,60 @@
 <body>
     <h1 class="subtitle is-1">Create Meal Plan</h1>
 
-<div class="columns">
+<!-- <div class="user-input">
+    <div class="modal"></div>
+        <div id="input-dietary-pref"></div>
+        <div id="input-calorie-amount"></div>
+        <div id="input-meal-amount"></div>
+</div> -->
+
+<button class="button is-medium open-modal">Open Modal</button>
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Choose your preferences</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="field">
+            <label class="label">How many recipes would you like?</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="4 meals">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">How many calories would you like, in total?</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="2500 calories" id="recipeValue">
+            </div>
+            <p class="help">The average man should consume 2500 calories a day, for women, this is 2000 calories </p>
+          </div>
+          <div class="select is-multiple">
+            <label class="label">Do you have any dietary preferences?</label>
+            <select multiple size="4" style="width: 600px" id="dietaryValue">
+                <option value="none">None</option>
+                <option value="choose-later">Choose Later</option>
+                <option value="gluten-free">Gluten Free</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="lacto-vegetarian">Lacto-Vegetarian</option>
+                <option value="ovo-vegetarian">Ovo-Vegetarian</option>
+                <option value="pescetarian">Pescetarian</option>
+                <option value="paleo">Paleo</option>
+                <option value="primal">Primal</option>
+            </select>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success saveModal">Save changes</button>
+        <button class="button" id="modal-cancel">Cancel</button>
+      </footer>
+    </div>
+  </div>
+
+<div class="columns create-meal-plan">
     <div class="column is-one-third">
        <div id="recipe-image"></div>
        <div id="recipe-ingredients"></div>
@@ -23,6 +76,6 @@
   </div>
 
     <!-- script links -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/createmealplan.js"></script>
 </body>
 </html>
