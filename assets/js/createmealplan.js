@@ -30,17 +30,18 @@ document.querySelector('.open-modal').addEventListener('click', function (event)
 //when save button is clicked, log all data to local storage
 var saveModal = document.querySelector('.saveModal')
 saveModal.addEventListener("click", saveModalSubmit)
-function saveModalSubmit(event){
-    event.preventDefault();
+function saveModalSubmit(){
     var modalDisplay = document.querySelector('.modal'); 
     var htmlDocument = document.querySelector('html');
     modalDisplay.classList.remove('is-active');
     htmlDocument.classList.remove('is-clipped');
-    var recipeValue = document.getElementById('recipeValue').value
-    localStorage.setItem("recipeValue", JSON.stringify(recipeValue))
-    console.log(localStorage);
+    var recipeNum = document.getElementsByClassName('recipeNum').value
+    localStorage.setItem("recipeNum", JSON.stringify(recipeNum))
+    var calNum = document.getElementsByClassName('calNum').value
+    localStorage.setItem("calNum", JSON.stringify(calNum))
 }
 
 var quickSelectOptions = {
-    recipeAmount: localStorage.getItem('recipeValue'),
+    recipesNum: localStorage.getItem('recipesNum'),
 }
+console.log(localStorage);
