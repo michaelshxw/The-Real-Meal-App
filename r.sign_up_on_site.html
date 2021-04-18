@@ -31,14 +31,15 @@
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="e.g John Smith">
+                    <input class="input" type="text" placeholder="e.g John Smith" id="nameValue">
                 </div>
             </div>
             <div class="field">
                 <label class="label">Age</label>
                 <div class="control">
                     <div class="select">
-                        <select>
+                        <select id="ageValue">
+                            <option></option>
                             <option>18-22</option>
                             <option>23-29</option>
                             <option>30-39</option>
@@ -56,20 +57,20 @@
             <div class="field">
                 <label class="label">Height</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="e.g 183cms">
+                    <input class="input" type="text" placeholder="e.g 183cms" id="heightValue">
                 </div>
             </div>
             <div class="field">
                 <label class="label">Weight</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="e.g 96kgs">
+                    <input class="input" type="text" placeholder="e.g 96kgs" id="weightValue">
                 </div>
             </div>
             <div class="field">
                 <label class="label">Gender</label>
                 <div class="control">
                     <div class="select">
-                        <select>
+                        <select id="genderValue">
                             <option>Male</option>
                             <option>Female</option>
                             <option>Other</option>
@@ -84,7 +85,7 @@
                     <p>Cancel</p>
                 </div>
                 <div class="button is-small" id="nextBtnOne">
-                    <p>Next1</p>
+                    <p>Next</p>
                 </div>
             </div>
         </div>
@@ -94,7 +95,7 @@
             <h3 class="subtitle is-1">Tell us some more! If you'd like...</h3>
             <div class="select is-multiple">
                 <label class="label">Activity Level</label>
-                <select multiple size="4" style="width: 400px">
+                <select multiple size="4" style="width: 400px" id="activityValue">
                     <option value="Sedentary">Sedentary</option>
                     <option value="Lightly Active">Lightly Active</option>
                     <option value="Moderately Active">Moderately Active</option>
@@ -105,7 +106,7 @@
             <br>
             <div class="select is-multiple">
                 <label class="label">What's your goal?</label>
-                <select multiple size="3" style="width: 400px">
+                <select multiple size="3" style="width: 400px" id="goalValue">
                     <option value="Lose Weight">Lose Weight</option>
                     <option value="Maintain Weight">Maintain Weight</option>
                     <option value="Increase Weight">Increase Weight</option>
@@ -115,7 +116,7 @@
             <br>
             <div class="select is-multiple">
                 <label class="label">Do you have any dietary preferences?</label>
-                <select multiple size="6" style="width: 400px">
+                <select multiple size="6" style="width: 400px" id="dietaryValue">
                     <option value="none">None</option>
                     <option value="choose-later">Choose Later</option>
                     <option value="gluten-free">Gluten Free</option>
@@ -144,7 +145,7 @@
             <h3 class="subtitle is-1">And most importantly...</h3>
             <div class="select is-multiple">
                 <label class="label">Do you have any allergies?</label>
-                <select multiple size="8" style="width: 400px">
+                <select multiple size="8" style="width: 400px" id="allergyValue">
                     <option value="Eggs">Eggs</option>
                     <option value="Tree Nuts">Tree Nuts</option>
                     <option value="Peanuts">Peanuts</option>
@@ -163,7 +164,7 @@
                     <p>Cancel</p>
                 </div>
                 <div class="button is-small" id="nextBtnThree">
-                    <p>Next</p>
+                    <p><a href=".//c.create_meal_plan.html">Submit</a></p>
                 </div>
             </div>
         </div>
