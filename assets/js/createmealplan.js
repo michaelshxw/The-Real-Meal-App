@@ -42,5 +42,19 @@ function saveModalSubmit(){
 }
 
 var quickSelectOptions = {
-    recipesNum: localStorage.getItem('recipesNum'),
+    recipes: localStorage.getItem('recipesNum'),
+    calories: localStorage.getItem('caloriesNum'),
+    diet: localStorage.getItem('dietaryQuick'),
+
 }
+
+//displaying recipes
+
+var apiKey = "4b2eba9b9022436d93402d88effe7013";
+var apiKeyURL = "?apiKey=4b2eba9b9022436d93402d88effe7013";
+
+var randomVeganRecipe = "";
+
+if (userOptions.diet == '"vegan"'){
+    console.log("i love vegans");
+} else quickSelectOptions.diet
