@@ -44,4 +44,3 @@ function saveModalSubmit(){
 var quickSelectOptions = {
     recipesNum: localStorage.getItem('recipesNum'),
 }
-console.log(localStorage);

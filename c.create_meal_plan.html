@@ -10,13 +10,7 @@
 
 <body>
     <h1 class="subtitle is-1">Create Meal Plan</h1>
-
-<!-- <div class="user-input">
-    <div class="modal"></div>
-        <div id="input-dietary-pref"></div>
-        <div id="input-calorie-amount"></div>
-        <div id="input-meal-amount"></div>
-</div> -->
+    <button class="button is-medium"><a href="./index.html">Edit profile</a></button>
 
 <button class="button is-medium open-modal">Open Modal</button>
 <div class="modal">
@@ -28,9 +22,9 @@
       </header>
       <section class="modal-card-body">
         <div class="field">
-            <label class="label">how many calories?</label>
+            <label class="label">How many recipes would you like?</label>
             <div class="control">
-                <input class="input" type="text" placeholder="e.g John Smith" id="recipesNum">
+                <input class="input" type="text" placeholder="5" id="recipesNum">
             </div>
         </div>
           <div class="field">
@@ -44,7 +38,6 @@
             <label class="label">Do you have any dietary preferences?</label>
             <select multiple size="4" style="width: 600px" id="dietaryValue">
                 <option value="none">None</option>
-                <option value="choose-later">Choose Later</option>
                 <option value="gluten-free">Gluten Free</option>
                 <option value="vegetarian">Vegetarian</option>
                 <option value="vegan">Vegan</option>
