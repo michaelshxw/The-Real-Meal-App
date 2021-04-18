@@ -62,7 +62,6 @@ function nextBtnThreeSubmit(){
     screenFour.style.display = "none";
     var allergyValue = document.getElementById('allergyValue').value
     localStorage.setItem("allergyValue", JSON.stringify(allergyValue))
-    alert('All Data Saved')
 }
 
 //first cancel button, goes to page one of sign up
