@@ -84,6 +84,7 @@ h3 {
 /* create meal plan styling */
 
 .column {
+    display: none;
     border: solid black 3px;
 }
 
