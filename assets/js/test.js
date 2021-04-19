@@ -6,20 +6,19 @@ personProfile.username = "";
 personProfile.userAge = "";
 personProfile.userHeight = "";
 personProfile.userWeight = "";
-personProfile.userGender = "";
-personProfile.activityLevel = "";
-personProfile.goal = "";
-personProfile.dietryPref = "";
-personProfile.allergies = "";
+personProfile.selectionID = new Array();
+personProfile.selectionText = new Array();
 
 let nextBtn = document.getElementById("nextBtnOne");
 
 nextBtn.addEventListener("click",function (){
 personProfile.username = userProfile[0].value;
-personProfile.userAge = userProfile[1].options[userProfile[1].selectedIndex].text;
+personProfile.selectionID.push(userProfile[1].selectedIndex);
+personProfile.selectionText.push(userProfile[1].options[userProfile[1].selectedIndex].value);
 personProfile.userHeight = userProfile[2].value;
 personProfile.userWeight = userProfile[3].value;
-personProfile.userGender = userProfile[4].options[userProfile[4].selectedIndex].text;
+personProfile.selectionID.push(userProfile[4].selectedIndex);
+personProfile.selectionText.push(userProfile[4].options[userProfile[4].selectedIndex].value);
 screenTwo.style.display = "none";
 screenThree.style.display = "block";
 });
@@ -52,9 +51,13 @@ function nextBtnTwoSubmit(){
 
     else
     {
-        personProfile.activityLevel = userProfile[5].options[userProfile[5].selectedIndex].text;
-        personProfile.goal = userProfile[6].options[userProfile[6].selectedIndex].text;
-        personProfile.dietryPref = userProfile[7].options[userProfile[7].selectedIndex].text;
+    
+        personProfile.selectionID.push(userProfile[5].selectedIndex);
+personProfile.selectionText.push(userProfile[5].options[userProfile[5].selectedIndex].value);
+personProfile.selectionID.push(userProfile[6].selectedIndex);
+personProfile.selectionText.push(userProfile[6].options[userProfile[6].selectedIndex].value);
+personProfile.selectionID.push(userProfile[7].selectedIndex);
+personProfile.selectionText.push(userProfile[7].options[userProfile[7].selectedIndex].value);
         screenThree.style.display = "none";
         screenFour.style.display = "block";
     }
@@ -71,6 +74,8 @@ function nextBtnThreeSubmit(){
     else
     {
     personProfile.allergies = userProfile[8].options[userProfile[8].selectedIndex].text;
+    personProfile.selectionID.push(userProfile[8].selectedIndex);
+    personProfile.selectionText.push(userProfile[8].options[userProfile[8].selectedIndex].value);
     localStorage.setItem("profile", JSON.stringify(personProfile));
     window.location.assign(".//c.create_meal_plan.html");
     }
@@ -79,7 +84,8 @@ function nextBtnThreeSubmit(){
 function getData()
 {
  let profileData = localStorage.getItem("profile");
- console.log(JSON.parse(profileData));
+ profileData = JSON.parse(profileData);
+
 } 
 
 getData();
