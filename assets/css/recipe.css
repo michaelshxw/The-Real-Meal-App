@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "bastian";
+    src: url(../fonts/Bastian.ttf);
+}
+
+.button {
+    border: 3px solid #88CA5E !important;
+    border-radius: 100px !important;
+    transition: all 0.5s ease 0s;
+    width: 150px;
+}
+
+.button:hover {
+    background: #D2FBA4;
+    border-color:  #88CA5E !important;
+    transition: all 0.5s ease 0s;
+}
+
+#editBtn {
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.recipeheader {
+    font-family: "bastian";
+    font-size: 90px !important;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#columnfirst {
+    margin-top: 120px;
+}
+
+#columnthird {
+    margin-bottom: 50px;
+}
+
+.column {
+    margin-top: 50px;
+    border: solid black 3px;
+}
+
+.columns {
+    padding: 0px 100px;
+    padding-bottom: 0px;
+    height: auto;
+}
+
+#totalValue {
+    margin-bottom: 100px;
+}
