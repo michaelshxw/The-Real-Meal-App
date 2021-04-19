@@ -52,8 +52,20 @@ function nextBtnTwoSubmit(){
     localStorage.setItem("activityValue", JSON.stringify(activityValue))
     var goalValue = document.getElementById('goalValue').value
     localStorage.setItem("goalValue", JSON.stringify(goalValue))
+
     var dietaryValue = document.getElementById('dietaryValue').value
-    localStorage.setItem("dietaryValue", JSON.stringify(dietaryValue))
+    localStorage.setItem("dietaryValue", dietaryValue)
+    /* localStorage.setItem("dietaryValue", JSON.stringify(dietaryValue)) */
+
+
+    console.log(dietaryValue)
+    console.log(typeof dietaryValue)
+
+    if(dietaryValue === "vegetarian"){  //This IF is just to check what option was selected
+        console.log("vegetarian option was selected")
+    }else{
+        console.log("nothing")
+    }
 }
 
 //third next button, displays first page outside of sign up
@@ -63,6 +75,7 @@ function nextBtnThreeSubmit(){
     var allergyValue = document.getElementById('allergyValue').value
     localStorage.setItem("allergyValue", JSON.stringify(allergyValue))
     alert('All Data Saved')
+    
 }
 
 //first cancel button, goes to page one of sign up
@@ -101,3 +114,4 @@ var userOptions = {
     goal: localStorage.getItem('goalValue'),
     diet: localStorage.getItem('dietaryValue')
 }
+
