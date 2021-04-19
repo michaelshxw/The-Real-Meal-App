@@ -1,79 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/recipe.css">
+    <title>The Real Meal: Your Meal Plan</title>
 </head>
+
 <body>
+    <a class="button is-medium" type="button" id="editBtn" href="./editprofile.html">Edit profile</a>
 
-    <div class="title"> <h1> recipes Test </h1>  </div>
-   
-
-    <div class = "recipeContainer">
-
-
-        <div class='recipeCard'> 
-                                <h2 class='wHeader'> </h2> 
-                                <P class='recipeP date'>  </P>
-                                <p class="recipeP temp"></p>
-                                <img class="recipeP">
-                                <p class='recipeP'></p>
-                                <p class='forcastP'> </p>
-                                <p class= 'recipeP'></p>
-                                <p class= 'recipeP'></p>
-
-        </div>
-
-        <div class='recipeCard'> 
-
-                              <h2 class='wHeader'> </h2> 
-                              <P class='recipeP date'>  </P>
-                              <p class="recipeP temp"></p>
-                              <img class="recipeP">
-                              <p class='recipeP'></p>
-                              <p class='forcastP'> </p>
-                              <p class= 'recipeP'></p>
-                              <p class= 'recipeP'></p>
-        </div>
-
-        <div class='recipeCard'> 
-                                <h2 class='wHeader'> </h2> 
-                                <P class='recipeP date'>  </P>
-                                <p class="recipeP temp"></p>
-                                <img class="recipeP">
-                                <p class='recipeP'></p>
-                                <p class='forcastP'> </p>
-                                <p class= 'recipeP'></p>
-                                <p class= 'recipeP'></p>
-            
-        </div>
-
-        <div class='recipeCard'> 
-                                <h2 class='wHeader'> </h2> 
-                                <P class='recipeP date'>  </P>
-                                <p class="recipeP temp"></p>
-                                <img class="recipeP">
-                                <p class='recipeP'></p>
-                                <p class='forcastP'> </p>
-                                <p class= 'recipeP'></p>
-                                <p class= 'recipeP'></p>
-        </div>
-
-        <div class='recipeCard'> 
-                                <h2 class='wHeader'> </h2> 
-                                <P class='recipeP date'>  </P>
-                                <p class="recipeP temp"></p>
-                                <img class="recipeP">
-                                <p class='recipeP'></p>
-                                <p class='forcastP'> </p>
-                                <p class= 'recipeP'></p>
-                                <p class= 'recipeP'></p>
-            
-        </div>
-    <script src="./assets/js/deliver.js"></script>
+    <h2 class="subtitle recipeheader">Your Meal Plan</h2>
     
+        <div class="columns" id="columnfirst">
+            <div class="column is-one-third">
+                <div class="recipe-image1"></div>
+            </div>
+            <div class="column is-two-thirds">
+                <div class="recipe-title1"></div>
+                <br>
+                <div>Find recipe here: <a class="recipe-url1"></a></div>
+            </div>
+        </div>
+
+        <div class="columns" id="columnsecond">
+            <div class="column is-one-third">
+                <div class="recipe-image2"></div>
+            </div>
+            <div class="column is-two-thirds">
+                <div class="recipe-title2"></div>
+                <br>
+                <div>Find recipe here: <a class="recipe-url2"></a></div>
+            </div>
+        </div>
+
+        <div class="columns" id="columnthird">
+            <div class="column is-one-third">
+                <div class="recipe-image3"></div>
+            </div>
+            <div class="column is-two-thirds">
+                <div class="recipe-title3"></div>
+                <br>
+                <div>Find recipe here: <a class="recipe-url3"></a></div>
+            </div>
+        </div>
+
+        <div class="columns" id="totalValue">
+            <div class="column">
+                <div>Total Nutritional Value</div>
+                <div>
+                    <br>
+                    <ul>
+                        <li id="totalCal"></li>
+                        <li id="totalProtein"></li>
+                        <li id="totalFat"></li>
+                        <li id="totalCarbs"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <script src="./assets/js/deliver.js"></script>
+
 </body>
+
 </html>
