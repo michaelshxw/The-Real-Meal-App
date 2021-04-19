@@ -59,18 +59,32 @@ function getApi2(url2) {
           return response.json();          
         })
         .then(function (data) {
+            console.log(data)
+            console.log(typeof data)
             numberDiv.innerHTML = data[0].steps[0].number
             /* stepDiv.innerHTML = data[0].steps[0].step */ //Shows 1 spet only
             
-            /* var firstArray;
-            for(var i=0; i <= data.lenght; i++){
-                firstArray = data[i]
-                console.log(data[i])
+            for(var i = 0; i < data.length; i++){
+               var oneIn = data[i];
+               console.log(oneIn)
+               console.log(typeof oneIn)
             }
-                
-            console.log(typeof firstArray) */
+            var twoIn = oneIn.steps
+            console.log(twoIn)
+            console.log(typeof twoIn)
+             var step1 = twoIn[0].step
+             var step2 = twoIn[1].step
+             var step3 = twoIn[2].step
+             var step4 = twoIn[3].step
+             var step5 = twoIn[4].step
+             var step6 = twoIn[5].step
+             var step7 = twoIn[6].step
+             var step8 = twoIn[7].step
+             var step9 = twoIn[8].step
 
+             var displayRecipe = step1 + "<br>" + "<hr>" + step2 + "<br>" + "<hr>" + step3 + "<br>" + "<hr>" + step4 + "<br>" + "<hr>" + step5 + "<br>" + "<hr>" + step6 + "<br>" + "<hr>" + step7 + "<br>" + "<hr>" + step8 + "<br>" + "<hr>" + step9  
 
+             stepDiv.innerHTML = displayRecipe
 
 
 
