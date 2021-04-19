@@ -32,7 +32,7 @@ function contactSpoon(endPoint) {
         })
         .catch(function error(error)
     {
-        alert("Unable to retrieve weather report. Check your spelling and try again...");
+        alert("Unknown error: please try again");
     });
 }
 
