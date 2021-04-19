@@ -62,22 +62,17 @@ function populate() {
     //append link of first recipe
     var firstMealLink = meals.meals[0].sourceUrl;
     var recipeURL1 = document.querySelector('.recipe-url1')
-    recipeURL1.append(firstMealLink);
-    recipeURL1.href = firstMealLink;
+    recipeURL1.append(" " + firstMealLink);
 
     //append link of second recipe
     var secondMealLink = meals.meals[1].sourceUrl;
     var recipeURL2 = document.querySelector('.recipe-url2')
-    recipeURL2.append(secondMealLink);
-    recipeURL2.href = secondMealLink;
-
+    recipeURL2.append(" " + secondMealLink);
 
     //append link of third recipe
     var thirdMealLink = meals.meals[2].sourceUrl;
     var recipeURL3 = document.querySelector('.recipe-url3')
-    recipeURL3.append(thirdMealLink);
-    recipeURL3.href = thirdMealLink;
-
+    recipeURL3.append(" " + thirdMealLink);
 
     //image append
     //declare variables
