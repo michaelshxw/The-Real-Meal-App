@@ -12,7 +12,7 @@ let recipieInfo = "&addRecipeInformation=true"
 const usersProfile = JSON.parse(localStorage.getItem("profile"));
 
 let endP = spoonURL + appID + dietPref + usersProfile.dietryPref + exclude + usersProfile.allergies + noOfmeals + usersProfile.noOfRecipies + calories + usersProfile.calories + instructions + recipieInfo;
-
+contactSpoon(endP);
 
 
 function contactSpoon(endPoint)
@@ -30,6 +30,7 @@ fetch(endPoint)
     .then(function process(pData) {
 
         localStorage.setItem("meal-plan", JSON.stringify(pData));
+        populate();
 
     })
     .catch(function error(error)
@@ -49,7 +50,8 @@ const recipeCards = document.getElementsByClassName("recipeCard");
 
 let rchild, rName, rSummary
 
-
+if(meals != null)
+{
 for (i = 0; i < recipeCards.length; i++)
 {
     rType = meals.dishTypes[0];
@@ -61,7 +63,6 @@ for (i = 0; i < recipeCards.length; i++)
     rChild[1].textContent = rType;
     rChild[3].setAttribute("src", rImg);
 }
-
+}
 }
 
-populate();
