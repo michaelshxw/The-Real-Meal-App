@@ -32,7 +32,7 @@ function contactSpoon(endPoint) {
         })
         .catch(function error(error)
     {
-        alert("Unable to retrieve weather report. Check your spelling and try again...");
+        alert("User profile has not been filled out properly, please click 'edit profile' and try again");
     });
 }
 
@@ -64,7 +64,7 @@ function populate() {
     var recipeURL1 = document.querySelector('.recipe-url1')
     recipeURL1.append(firstMealLink);
     recipeURL1.href = firstMealLink;
-
+t
     //append link of second recipe
     var secondMealLink = meals.meals[1].sourceUrl;
     var recipeURL2 = document.querySelector('.recipe-url2')
