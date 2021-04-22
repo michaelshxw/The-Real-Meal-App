@@ -55,5 +55,5 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
 
 ### Authors
 * **Michael Shaw** [GitHub Profile](https://github.com/michaelshxw)
-* **Brendan Lewis** [GitHub Profile](https://github.com/)
-* **Miguel Angel** [GitHub Profile](https://github.com/)
+* **Brendan Lewis** [GitHub Profile](https://github.com/operationBrass)
+* **Miguel Angel** [GitHub Profile](https://github.com/miguel-thethird)
