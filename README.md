@@ -34,8 +34,6 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
 ### Summary
 * This Work Day Scheduler uses HTML, CSS and JavaScript to display a calendar. Once the user has entered their events, they can save them to localStorage. If they would like to delete them, they can delete them from localStorage. Events entered by the user will remain saved even if they close the browser.
 * This project highlights the use of JavaScript to make dynamic changes to a HTML document.
-    
-### Project Requirements 
 
 ### Authors
 * **Michael Shaw** [GitHub Profile](https://github.com/michaelshxw)
