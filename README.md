@@ -7,7 +7,7 @@ This application was created for a project for UWA's coding bootcamp.
 
 This application makes use the Spoonacular API to generate custom meal plans.
 
-![]()
+![](./assets/screenshots/landing-page.png)
 
 ### Getting Started
 
@@ -34,8 +34,6 @@ To install this code, download the zip file, or use GitHub's guidelines to clone
 ### Summary
 * This Work Day Scheduler uses HTML, CSS and JavaScript to display a calendar. Once the user has entered their events, they can save them to localStorage. If they would like to delete them, they can delete them from localStorage. Events entered by the user will remain saved even if they close the browser.
 * This project highlights the use of JavaScript to make dynamic changes to a HTML document.
-
-![](./assets/screenshots/landing-page.png)
     
 ### Project Requirements 
 
